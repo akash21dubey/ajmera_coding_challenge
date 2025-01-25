@@ -13,7 +13,6 @@
 		00D7969C2D44CFCF00137AD5 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D796962D44CFCF00137AD5 /* Persistence.swift */; };
 		00D7969D2D44CFCF00137AD5 /* ajmera_coding_challengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D796932D44CFCF00137AD5 /* ajmera_coding_challengeApp.swift */; };
 		00D7969E2D44CFCF00137AD5 /* ajmera_coding_challenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 00D796922D44CFCF00137AD5 /* ajmera_coding_challenge.xcdatamodeld */; };
-		00D796A52D44D04000137AD5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D796A42D44D03C00137AD5 /* User.swift */; };
 		00D796A92D44D09300137AD5 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D796A82D44D09300137AD5 /* APIManager.swift */; };
 		00D796AF2D44D12600137AD5 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D796AE2D44D12600137AD5 /* SignUpView.swift */; };
 		00D796B12D44D14600137AD5 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D796B02D44D14600137AD5 /* SignInView.swift */; };
@@ -53,7 +52,6 @@
 		00D796942D44CFCF00137AD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00D796962D44CFCF00137AD5 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		00D796982D44CFCF00137AD5 /* ajmera_coding_challenge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ajmera_coding_challenge.xcdatamodel; sourceTree = "<group>"; };
-		00D796A42D44D03C00137AD5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		00D796A82D44D09300137AD5 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		00D796AE2D44D12600137AD5 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		00D796B02D44D14600137AD5 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
@@ -146,9 +144,7 @@
 				00D796B92D44D87C00137AD5 /* DashboardView */,
 				00D796B82D44D87000137AD5 /* SignInView */,
 				00D796B72D44D85F00137AD5 /* SignUpView */,
-				00D796A32D44D02600137AD5 /* Resources */,
 				00D796A22D44D01E00137AD5 /* Helpers */,
-				00D7969F2D44CFD400137AD5 /* Models */,
 				00D796902D44CFCF00137AD5 /* Preview Content */,
 				00D796912D44CFCF00137AD5 /* ajmera_coding_challenge.entitlements */,
 				00D796922D44CFCF00137AD5 /* ajmera_coding_challenge.xcdatamodeld */,
@@ -157,14 +153,6 @@
 				00D796C82D44FF3100137AD5 /* Info.plist */,
 			);
 			path = ajmera_coding_challenge;
-			sourceTree = "<group>";
-		};
-		00D7969F2D44CFD400137AD5 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				00D796A42D44D03C00137AD5 /* User.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		00D796A12D44D00A00137AD5 /* Views */ = {
@@ -184,13 +172,6 @@
 				00D796962D44CFCF00137AD5 /* Persistence.swift */,
 			);
 			path = Helpers;
-			sourceTree = "<group>";
-		};
-		00D796A32D44D02600137AD5 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		00D796B72D44D85F00137AD5 /* SignUpView */ = {
@@ -415,7 +396,6 @@
 				00D796C22D44F11100137AD5 /* SignInViewModel.swift in Sources */,
 				00D796B52D44D2BF00137AD5 /* AppConstants.swift in Sources */,
 				00D7969D2D44CFCF00137AD5 /* ajmera_coding_challengeApp.swift in Sources */,
-				00D796A52D44D04000137AD5 /* User.swift in Sources */,
 				00D7969E2D44CFCF00137AD5 /* ajmera_coding_challenge.xcdatamodeld in Sources */,
 				0043C47D2D4513D00059F875 /* SignInModel.swift in Sources */,
 			);
