@@ -1,0 +1,793 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0043C47D2D4513D00059F875 /* SignInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0043C47C2D4513D00059F875 /* SignInModel.swift */; };
+		00D796992D44CFCF00137AD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00D796942D44CFCF00137AD5 /* Assets.xcassets */; };
+		00D7969A2D44CFCF00137AD5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00D7968F2D44CFCF00137AD5 /* Preview Assets.xcassets */; };
+		00D7969C2D44CFCF00137AD5 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D796962D44CFCF00137AD5 /* Persistence.swift */; };
+		00D7969D2D44CFCF00137AD5 /* ajmera_coding_challengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D796932D44CFCF00137AD5 /* ajmera_coding_challengeApp.swift */; };
+		00D7969E2D44CFCF00137AD5 /* ajmera_coding_challenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 00D796922D44CFCF00137AD5 /* ajmera_coding_challenge.xcdatamodeld */; };
+		00D796A52D44D04000137AD5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D796A42D44D03C00137AD5 /* User.swift */; };
+		00D796A92D44D09300137AD5 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D796A82D44D09300137AD5 /* APIManager.swift */; };
+		00D796AF2D44D12600137AD5 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D796AE2D44D12600137AD5 /* SignUpView.swift */; };
+		00D796B12D44D14600137AD5 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D796B02D44D14600137AD5 /* SignInView.swift */; };
+		00D796B32D44D16B00137AD5 /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D796B22D44D16B00137AD5 /* Dashboard.swift */; };
+		00D796B52D44D2BF00137AD5 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D796B42D44D2BF00137AD5 /* AppConstants.swift */; };
+		00D796BF2D44E0A600137AD5 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D796BE2D44E0A600137AD5 /* SignUpViewModel.swift */; };
+		00D796C22D44F11100137AD5 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D796C12D44F11100137AD5 /* SignInViewModel.swift */; };
+		00D796C42D44F9B800137AD5 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D796C32D44F9B800137AD5 /* APIError.swift */; };
+		00D796C72D44FA2100137AD5 /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D796C62D44FA2100137AD5 /* SignUpModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00D796482D44CD1800137AD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00D796292D44CD1600137AD5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00D796302D44CD1600137AD5;
+			remoteInfo = ajmera_coding_challenge;
+		};
+		00D796522D44CD1800137AD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00D796292D44CD1600137AD5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00D796302D44CD1600137AD5;
+			remoteInfo = ajmera_coding_challenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0043C47C2D4513D00059F875 /* SignInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInModel.swift; sourceTree = "<group>"; };
+		00D796312D44CD1600137AD5 /* ajmera_coding_challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ajmera_coding_challenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		00D796472D44CD1800137AD5 /* ajmera_coding_challengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ajmera_coding_challengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00D796512D44CD1800137AD5 /* ajmera_coding_challengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ajmera_coding_challengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00D7968F2D44CFCF00137AD5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		00D796912D44CFCF00137AD5 /* ajmera_coding_challenge.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ajmera_coding_challenge.entitlements; sourceTree = "<group>"; };
+		00D796932D44CFCF00137AD5 /* ajmera_coding_challengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ajmera_coding_challengeApp.swift; sourceTree = "<group>"; };
+		00D796942D44CFCF00137AD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00D796962D44CFCF00137AD5 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		00D796982D44CFCF00137AD5 /* ajmera_coding_challenge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ajmera_coding_challenge.xcdatamodel; sourceTree = "<group>"; };
+		00D796A42D44D03C00137AD5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		00D796A82D44D09300137AD5 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		00D796AE2D44D12600137AD5 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		00D796B02D44D14600137AD5 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		00D796B22D44D16B00137AD5 /* Dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
+		00D796B42D44D2BF00137AD5 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		00D796BE2D44E0A600137AD5 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		00D796C12D44F11100137AD5 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		00D796C32D44F9B800137AD5 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		00D796C62D44FA2100137AD5 /* SignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
+		00D796C82D44FF3100137AD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		00D7964A2D44CD1800137AD5 /* ajmera_coding_challengeTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ajmera_coding_challengeTests;
+			sourceTree = "<group>";
+		};
+		00D796542D44CD1800137AD5 /* ajmera_coding_challengeUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ajmera_coding_challengeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00D7962E2D44CD1600137AD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00D796442D44CD1800137AD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00D7964E2D44CD1800137AD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0043C47B2D4513BF0059F875 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0043C47C2D4513D00059F875 /* SignInModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		00D796282D44CD1600137AD5 = {
+			isa = PBXGroup;
+			children = (
+				00D796972D44CFCF00137AD5 /* ajmera_coding_challenge */,
+				00D7964A2D44CD1800137AD5 /* ajmera_coding_challengeTests */,
+				00D796542D44CD1800137AD5 /* ajmera_coding_challengeUITests */,
+				00D796322D44CD1600137AD5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		00D796322D44CD1600137AD5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00D796312D44CD1600137AD5 /* ajmera_coding_challenge.app */,
+				00D796472D44CD1800137AD5 /* ajmera_coding_challengeTests.xctest */,
+				00D796512D44CD1800137AD5 /* ajmera_coding_challengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00D796902D44CFCF00137AD5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				00D7968F2D44CFCF00137AD5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		00D796972D44CFCF00137AD5 /* ajmera_coding_challenge */ = {
+			isa = PBXGroup;
+			children = (
+				00D796B92D44D87C00137AD5 /* DashboardView */,
+				00D796B82D44D87000137AD5 /* SignInView */,
+				00D796B72D44D85F00137AD5 /* SignUpView */,
+				00D796A32D44D02600137AD5 /* Resources */,
+				00D796A22D44D01E00137AD5 /* Helpers */,
+				00D7969F2D44CFD400137AD5 /* Models */,
+				00D796902D44CFCF00137AD5 /* Preview Content */,
+				00D796912D44CFCF00137AD5 /* ajmera_coding_challenge.entitlements */,
+				00D796922D44CFCF00137AD5 /* ajmera_coding_challenge.xcdatamodeld */,
+				00D796932D44CFCF00137AD5 /* ajmera_coding_challengeApp.swift */,
+				00D796942D44CFCF00137AD5 /* Assets.xcassets */,
+				00D796C82D44FF3100137AD5 /* Info.plist */,
+			);
+			path = ajmera_coding_challenge;
+			sourceTree = "<group>";
+		};
+		00D7969F2D44CFD400137AD5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				00D796A42D44D03C00137AD5 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		00D796A12D44D00A00137AD5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				00D796B22D44D16B00137AD5 /* Dashboard.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		00D796A22D44D01E00137AD5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				00D796A82D44D09300137AD5 /* APIManager.swift */,
+				00D796B42D44D2BF00137AD5 /* AppConstants.swift */,
+				00D796C32D44F9B800137AD5 /* APIError.swift */,
+				00D796962D44CFCF00137AD5 /* Persistence.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		00D796A32D44D02600137AD5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		00D796B72D44D85F00137AD5 /* SignUpView */ = {
+			isa = PBXGroup;
+			children = (
+				00D796C52D44FA0900137AD5 /* Model */,
+				00D796BD2D44E09200137AD5 /* ViewModel */,
+				00D796BB2D44D89E00137AD5 /* Views */,
+			);
+			path = SignUpView;
+			sourceTree = "<group>";
+		};
+		00D796B82D44D87000137AD5 /* SignInView */ = {
+			isa = PBXGroup;
+			children = (
+				0043C47B2D4513BF0059F875 /* Model */,
+				00D796C02D44F0FA00137AD5 /* ViewModel */,
+				00D796BC2D44D8C000137AD5 /* Views */,
+			);
+			path = SignInView;
+			sourceTree = "<group>";
+		};
+		00D796B92D44D87C00137AD5 /* DashboardView */ = {
+			isa = PBXGroup;
+			children = (
+				00D796A12D44D00A00137AD5 /* Views */,
+			);
+			path = DashboardView;
+			sourceTree = "<group>";
+		};
+		00D796BB2D44D89E00137AD5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				00D796AE2D44D12600137AD5 /* SignUpView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		00D796BC2D44D8C000137AD5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				00D796B02D44D14600137AD5 /* SignInView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		00D796BD2D44E09200137AD5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				00D796BE2D44E0A600137AD5 /* SignUpViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		00D796C02D44F0FA00137AD5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				00D796C12D44F11100137AD5 /* SignInViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		00D796C52D44FA0900137AD5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				00D796C62D44FA2100137AD5 /* SignUpModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00D796302D44CD1600137AD5 /* ajmera_coding_challenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00D7965B2D44CD1800137AD5 /* Build configuration list for PBXNativeTarget "ajmera_coding_challenge" */;
+			buildPhases = (
+				00D7962D2D44CD1600137AD5 /* Sources */,
+				00D7962E2D44CD1600137AD5 /* Frameworks */,
+				00D7962F2D44CD1600137AD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ajmera_coding_challenge;
+			packageProductDependencies = (
+			);
+			productName = ajmera_coding_challenge;
+			productReference = 00D796312D44CD1600137AD5 /* ajmera_coding_challenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		00D796462D44CD1800137AD5 /* ajmera_coding_challengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00D7965E2D44CD1800137AD5 /* Build configuration list for PBXNativeTarget "ajmera_coding_challengeTests" */;
+			buildPhases = (
+				00D796432D44CD1800137AD5 /* Sources */,
+				00D796442D44CD1800137AD5 /* Frameworks */,
+				00D796452D44CD1800137AD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00D796492D44CD1800137AD5 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				00D7964A2D44CD1800137AD5 /* ajmera_coding_challengeTests */,
+			);
+			name = ajmera_coding_challengeTests;
+			packageProductDependencies = (
+			);
+			productName = ajmera_coding_challengeTests;
+			productReference = 00D796472D44CD1800137AD5 /* ajmera_coding_challengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		00D796502D44CD1800137AD5 /* ajmera_coding_challengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00D796612D44CD1800137AD5 /* Build configuration list for PBXNativeTarget "ajmera_coding_challengeUITests" */;
+			buildPhases = (
+				00D7964D2D44CD1800137AD5 /* Sources */,
+				00D7964E2D44CD1800137AD5 /* Frameworks */,
+				00D7964F2D44CD1800137AD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00D796532D44CD1800137AD5 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				00D796542D44CD1800137AD5 /* ajmera_coding_challengeUITests */,
+			);
+			name = ajmera_coding_challengeUITests;
+			packageProductDependencies = (
+			);
+			productName = ajmera_coding_challengeUITests;
+			productReference = 00D796512D44CD1800137AD5 /* ajmera_coding_challengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00D796292D44CD1600137AD5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					00D796302D44CD1600137AD5 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					00D796462D44CD1800137AD5 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 00D796302D44CD1600137AD5;
+					};
+					00D796502D44CD1800137AD5 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 00D796302D44CD1600137AD5;
+					};
+				};
+			};
+			buildConfigurationList = 00D7962C2D44CD1600137AD5 /* Build configuration list for PBXProject "ajmera_coding_challenge" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 00D796282D44CD1600137AD5;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 00D796322D44CD1600137AD5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00D796302D44CD1600137AD5 /* ajmera_coding_challenge */,
+				00D796462D44CD1800137AD5 /* ajmera_coding_challengeTests */,
+				00D796502D44CD1800137AD5 /* ajmera_coding_challengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00D7962F2D44CD1600137AD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00D796992D44CFCF00137AD5 /* Assets.xcassets in Resources */,
+				00D7969A2D44CFCF00137AD5 /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00D796452D44CD1800137AD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00D7964F2D44CD1800137AD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00D7962D2D44CD1600137AD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00D796AF2D44D12600137AD5 /* SignUpView.swift in Sources */,
+				00D796A92D44D09300137AD5 /* APIManager.swift in Sources */,
+				00D796B32D44D16B00137AD5 /* Dashboard.swift in Sources */,
+				00D796C72D44FA2100137AD5 /* SignUpModel.swift in Sources */,
+				00D796B12D44D14600137AD5 /* SignInView.swift in Sources */,
+				00D7969C2D44CFCF00137AD5 /* Persistence.swift in Sources */,
+				00D796BF2D44E0A600137AD5 /* SignUpViewModel.swift in Sources */,
+				00D796C42D44F9B800137AD5 /* APIError.swift in Sources */,
+				00D796C22D44F11100137AD5 /* SignInViewModel.swift in Sources */,
+				00D796B52D44D2BF00137AD5 /* AppConstants.swift in Sources */,
+				00D7969D2D44CFCF00137AD5 /* ajmera_coding_challengeApp.swift in Sources */,
+				00D796A52D44D04000137AD5 /* User.swift in Sources */,
+				00D7969E2D44CFCF00137AD5 /* ajmera_coding_challenge.xcdatamodeld in Sources */,
+				0043C47D2D4513D00059F875 /* SignInModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00D796432D44CD1800137AD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00D7964D2D44CD1800137AD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00D796492D44CD1800137AD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00D796302D44CD1600137AD5 /* ajmera_coding_challenge */;
+			targetProxy = 00D796482D44CD1800137AD5 /* PBXContainerItemProxy */;
+		};
+		00D796532D44CD1800137AD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00D796302D44CD1600137AD5 /* ajmera_coding_challenge */;
+			targetProxy = 00D796522D44CD1800137AD5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00D796592D44CD1800137AD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		00D7965A2D44CD1800137AD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		00D7965C2D44CD1800137AD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ajmera_coding_challenge/ajmera_coding_challenge.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ajmera_coding_challenge/Preview Content\"";
+				DEVELOPMENT_TEAM = Z8C2D936JA;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = ajmera_coding_challenge/Info.plist;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.akash.ajmera-coding-challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		00D7965D2D44CD1800137AD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ajmera_coding_challenge/ajmera_coding_challenge.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ajmera_coding_challenge/Preview Content\"";
+				DEVELOPMENT_TEAM = Z8C2D936JA;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = ajmera_coding_challenge/Info.plist;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.akash.ajmera-coding-challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		00D7965F2D44CD1800137AD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z8C2D936JA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.akash.ajmera-coding-challengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ajmera_coding_challenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ajmera_coding_challenge";
+				XROS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		00D796602D44CD1800137AD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z8C2D936JA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.akash.ajmera-coding-challengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ajmera_coding_challenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ajmera_coding_challenge";
+				XROS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		00D796622D44CD1800137AD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z8C2D936JA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.akash.ajmera-coding-challengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_TARGET_NAME = ajmera_coding_challenge;
+				XROS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		00D796632D44CD1800137AD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z8C2D936JA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.akash.ajmera-coding-challengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_TARGET_NAME = ajmera_coding_challenge;
+				XROS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00D7962C2D44CD1600137AD5 /* Build configuration list for PBXProject "ajmera_coding_challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00D796592D44CD1800137AD5 /* Debug */,
+				00D7965A2D44CD1800137AD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00D7965B2D44CD1800137AD5 /* Build configuration list for PBXNativeTarget "ajmera_coding_challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00D7965C2D44CD1800137AD5 /* Debug */,
+				00D7965D2D44CD1800137AD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00D7965E2D44CD1800137AD5 /* Build configuration list for PBXNativeTarget "ajmera_coding_challengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00D7965F2D44CD1800137AD5 /* Debug */,
+				00D796602D44CD1800137AD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00D796612D44CD1800137AD5 /* Build configuration list for PBXNativeTarget "ajmera_coding_challengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00D796622D44CD1800137AD5 /* Debug */,
+				00D796632D44CD1800137AD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		00D796922D44CFCF00137AD5 /* ajmera_coding_challenge.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				00D796982D44CFCF00137AD5 /* ajmera_coding_challenge.xcdatamodel */,
+			);
+			currentVersion = 00D796982D44CFCF00137AD5 /* ajmera_coding_challenge.xcdatamodel */;
+			path = ajmera_coding_challenge.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 00D796292D44CD1600137AD5 /* Project object */;
+}
