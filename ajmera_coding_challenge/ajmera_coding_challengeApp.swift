@@ -10,12 +10,12 @@ import SwiftUI
 @main
 struct ajmera_coding_challengeApp: App {
     
-    @AppStorage("isLoggedIn") private var isLoggedIn: Bool = false
+    @AppStorage(ConstantKeys.isLoggedIn) private var isLoggedIn: Bool = false
     
     var body: some Scene {
         WindowGroup {
             if isLoggedIn {
-                Dashboard()
+                DashboardView()
             } else {
                 SignInView()
             }

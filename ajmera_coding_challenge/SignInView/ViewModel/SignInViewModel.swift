@@ -16,11 +16,10 @@ class SignInViewModel: ObservableObject {
     @Published var isLoading: Bool = false  // Added isLoading property
     @Published var navigateToDashboard: Bool = false  // Tracks successful sign-in
     
-    private let emailRegEx = "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
-    private let apiService = APIManager.shared  // The shared instance of APIService
+    let apiService: APIServiceProtocol // Use the protocol type here
     
-    init() {
-        // Initial validation for enabling the sign-in button
+    init(apiService: APIServiceProtocol = APIManager.shared) {
+        self.apiService = apiService
         updateButtonState()
     }
     
@@ -49,9 +48,9 @@ class SignInViewModel: ObservableObject {
     func signIn() {
         // Perform the sign-in API call or logic here
         if !isValidEmail(email) {
-            errorMessage = "Invalid email address."
+            errorMessage = ValidationStrings.invalidEmailFormat
         } else if !isValidPassword(password) {
-            errorMessage = "Password cannot be empty."
+            errorMessage = ValidationStrings.passwordEmpty
         } else {
             callSignInApi()
         }
@@ -65,12 +64,12 @@ class SignInViewModel: ObservableObject {
         )
         
         // Start loading
-        //        isLoading = true
+        isLoading = true
         
         // Call the API to signup
         apiService.signin(with: requestData) { result in
             DispatchQueue.main.async {
-                //                self.isLoading = false
+                self.isLoading = false
                 switch result {
                 case .success(result: let response):
                     //save user data to core Data
@@ -81,8 +80,10 @@ class SignInViewModel: ObservableObject {
                         dateOfBirth: response.dateOfBirth,
                         gender: response.gender
                     )
+                    // save token in keychain
+                    _ = KeychainHelper.save(key: ConstantKeys.authToken, value: response.token)
                     // Update isLoggedIn state
-                    UserDefaults.standard.set(true, forKey: "isLoggedIn")
+                    UserDefaults.standard.set(true, forKey: ConstantKeys.isLoggedIn)
                     self.navigateToDashboard = true
                 case .failure(let error):
                     self.errorMessage = error.localizedDescription

@@ -11,10 +11,14 @@ import SwiftUI
 struct SignUpView: View {
     @StateObject private var viewModel = SignUpViewModel()
     
+    // State variables to toggle password visibility
+    @State private var isPasswordVisible = false
+    @State private var isConfirmPasswordVisible = false
+    
     var body: some View {
         Form {
             // Full Name
-            TextField("Full Name", text: $viewModel.fullName)
+            TextField(AppConstants.fullNamePlaceHolder, text: $viewModel.fullName)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .autocapitalization(.words)
                 .onChange(of: viewModel.fullName) { _ in
@@ -22,7 +26,7 @@ struct SignUpView: View {
                 }
             
             // Email
-            TextField("Email", text: $viewModel.email)
+            TextField(AppConstants.emailPlaceHolder, text: $viewModel.email)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .keyboardType(.emailAddress)
                 .autocapitalization(.none)
@@ -30,32 +34,63 @@ struct SignUpView: View {
                     viewModel.validateForm()
                 }
             
-            
             // Password
-            SecureField("Password", text: $viewModel.password)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .autocapitalization(.none)
-                .onChange(of: viewModel.password) { _ in
-                    viewModel.validateForm()
+            HStack {
+                if isPasswordVisible {
+                    TextField(AppConstants.passwordPlaceHolder, text: $viewModel.password)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .autocapitalization(.none)
+                } else {
+                    SecureField(AppConstants.passwordPlaceHolder, text: $viewModel.password)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .autocapitalization(.none)
                 }
+                
+                // Eye icon to toggle visibility
+                Button(action: {
+                    isPasswordVisible.toggle()
+                }) {
+                    Image(systemName: isPasswordVisible ? "eye.slash.fill" : "eye.fill")
+                        .foregroundColor(.gray)
+                }
+            }
+            .onChange(of: viewModel.password) { _ in
+                viewModel.validateForm()
+            }
             
             // Confirm Password
-            SecureField("Confirm Password", text: $viewModel.confirmPassword)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .autocapitalization(.none)
-                .onChange(of: viewModel.confirmPassword) { _ in
-                    viewModel.validateForm()
+            HStack {
+                if isConfirmPasswordVisible {
+                    TextField(AppConstants.confirmPasswordPlaceHolder, text: $viewModel.confirmPassword)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .autocapitalization(.none)
+                } else {
+                    SecureField(AppConstants.confirmPasswordPlaceHolder, text: $viewModel.confirmPassword)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .autocapitalization(.none)
                 }
+                
+                // Eye icon to toggle visibility
+                Button(action: {
+                    isConfirmPasswordVisible.toggle()
+                }) {
+                    Image(systemName: isConfirmPasswordVisible ? "eye.slash.fill" : "eye.fill")
+                        .foregroundColor(.gray)
+                }
+            }
+            .onChange(of: viewModel.confirmPassword) { _ in
+                viewModel.validateForm()
+            }
             
             // Date of Birth Picker
-            DatePicker("Date of Birth", selection: $viewModel.dateOfBirth, in: ...Date().addingTimeInterval(viewModel.minimumAge), displayedComponents: .date)
+            DatePicker(AppConstants.dateOfBirthText, selection: $viewModel.dateOfBirth, in: ...Date().addingTimeInterval(viewModel.minimumAge), displayedComponents: .date)
                 .onChange(of: viewModel.dateOfBirth) { _ in
                     viewModel.validateForm()
                 }
             
             // Gender Picker
-            Picker("Gender", selection: $viewModel.gender) {
-                Text("Select Gender").tag("")
+            Picker(AppConstants.genderText, selection: $viewModel.gender) {
+                Text(AppConstants.selectGenderText).tag("")
                 ForEach(viewModel.genders, id: \.self) { gender in
                     Text(gender).tag(gender)
                 }
@@ -69,7 +104,7 @@ struct SignUpView: View {
             Button(action: {
                 viewModel.signup()
             }) {
-                Text("Sign Up")
+                Text(AppConstants.signUpText)
                     .frame(maxWidth: .infinity)
                     .padding()
                     .background(viewModel.isFormValid ? Color.blue : Color.gray) // Enable button only when form is valid
@@ -77,18 +112,20 @@ struct SignUpView: View {
                     .cornerRadius(8)
             }
             .disabled(!viewModel.isFormValid) // Disable button if form is not valid
-            
-            // Error message
-            if !viewModel.isFormValid {
-                Text(viewModel.errorMessage)
-                    .foregroundColor(.red)
-                    .padding()
-            }
         }
-        .navigationTitle("Sign Up")
+        .navigationTitle(AppConstants.signUpNavigationBarTitle)
+        .navigationBarTitleDisplayMode(.inline)
         .onAppear {
             // Make sure the button is disabled when the screen is first loaded
             viewModel.validateForm()
+        }
+        .overlay(
+            viewModel.isLoading ? ProgressView(AppConstants.signingUpText).progressViewStyle(CircularProgressViewStyle()) : nil
+        )
+        
+        // Navigation to the login page
+        .navigationDestination(isPresented: $viewModel.navigateToSignIn) {
+            SignInView()
         }
     }
 }

@@ -7,10 +7,15 @@
 
 import Foundation
 
-class APIManager: NSObject {
+protocol APIServiceProtocol {
+    func signup(with data: SignUpRequest, completion: @escaping (Result<SignUpResponse, Error>) -> Void)
+    func signin(with data: SignInRequest, completion: @escaping (Result<SignInResponse, Error>) -> Void)
+}
+
+class APIManager: NSObject, APIServiceProtocol {
     static let shared = APIManager()
     
-    private let baseURL = "https://6794d6aeaad755a134ea8dd5.mockapi.io/ajmera/example/api" // Replace with your base URL
+    private let baseURL = "https://6794d6aeaad755a134ea8dd5.mockapi.io/ajmera/example/api"
     
     private override init() { }
     

@@ -15,7 +15,7 @@ struct SignInView: View {
             VStack(spacing: 20) {  // Stack the elements vertically
                 Spacer()
                 // Email TextField
-                TextField("Email", text: $viewModel.email)
+                TextField(AppConstants.emailPlaceHolder, text: $viewModel.email)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .keyboardType(.emailAddress)
                     .autocapitalization(.none)
@@ -25,7 +25,7 @@ struct SignInView: View {
                     .padding(.horizontal)
                 
                 // Password SecureField
-                SecureField("Password", text: $viewModel.password)
+                SecureField(AppConstants.passwordPlaceHolder, text: $viewModel.password)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .autocapitalization(.none)
                     .onChange(of: viewModel.password) { _ in
@@ -37,7 +37,7 @@ struct SignInView: View {
                 Button(action: {
                     viewModel.signIn()
                 }) {
-                    Text("Sign In")
+                    Text(AppConstants.loginButtonText)
                         .frame(maxWidth: .infinity)
                         .padding()
                         .background(viewModel.isSignInButtonEnabled ? Color.blue : Color.gray)
@@ -59,9 +59,9 @@ struct SignInView: View {
                 
                 // Sign-Up Link at the bottom
                 HStack {
-                    Text("Don't have an account?")
+                    Text(AppConstants.dontHaveAccountText)
                     NavigationLink(destination: SignUpView()) {
-                        Text("Sign Up")
+                        Text(AppConstants.signUpText)
                             .fontWeight(.semibold)
                             .foregroundColor(.blue)
                     }
@@ -69,11 +69,15 @@ struct SignInView: View {
                 .padding(.bottom, 20)  // Ensure it has some space from the bottom
             }
             .padding(.top, 40)  // Adjust top padding for better positioning
-            .navigationTitle("Sign In")
+            .overlay(
+                viewModel.isLoading ? ProgressView(AppConstants.signingInText).progressViewStyle(CircularProgressViewStyle()) : nil
+            )
+            .navigationTitle(AppConstants.signInNavigationBarTitle)
+            .navigationBarTitleDisplayMode(.inline)
             
             // Navigation to the dashboard
             .navigationDestination(isPresented: $viewModel.navigateToDashboard) {
-                Dashboard()
+                DashboardView()
             }
         }
     }

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0043C47D2D4513D00059F875 /* SignInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0043C47C2D4513D00059F875 /* SignInModel.swift */; };
+		0043C4812D452B3A0059F875 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0043C4802D452B3A0059F875 /* KeychainHelper.swift */; };
+		0043C4C02D4549610059F875 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0043C4BF2D4549610059F875 /* DashboardViewModel.swift */; };
 		00D796992D44CFCF00137AD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00D796942D44CFCF00137AD5 /* Assets.xcassets */; };
 		00D7969A2D44CFCF00137AD5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00D7968F2D44CFCF00137AD5 /* Preview Assets.xcassets */; };
 		00D7969C2D44CFCF00137AD5 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D796962D44CFCF00137AD5 /* Persistence.swift */; };
@@ -16,7 +18,7 @@
 		00D796A92D44D09300137AD5 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D796A82D44D09300137AD5 /* APIManager.swift */; };
 		00D796AF2D44D12600137AD5 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D796AE2D44D12600137AD5 /* SignUpView.swift */; };
 		00D796B12D44D14600137AD5 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D796B02D44D14600137AD5 /* SignInView.swift */; };
-		00D796B32D44D16B00137AD5 /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D796B22D44D16B00137AD5 /* Dashboard.swift */; };
+		00D796B32D44D16B00137AD5 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D796B22D44D16B00137AD5 /* DashboardView.swift */; };
 		00D796B52D44D2BF00137AD5 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D796B42D44D2BF00137AD5 /* AppConstants.swift */; };
 		00D796BF2D44E0A600137AD5 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D796BE2D44E0A600137AD5 /* SignUpViewModel.swift */; };
 		00D796C22D44F11100137AD5 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D796C12D44F11100137AD5 /* SignInViewModel.swift */; };
@@ -43,6 +45,8 @@
 
 /* Begin PBXFileReference section */
 		0043C47C2D4513D00059F875 /* SignInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInModel.swift; sourceTree = "<group>"; };
+		0043C4802D452B3A0059F875 /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
+		0043C4BF2D4549610059F875 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 		00D796312D44CD1600137AD5 /* ajmera_coding_challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ajmera_coding_challenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00D796472D44CD1800137AD5 /* ajmera_coding_challengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ajmera_coding_challengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00D796512D44CD1800137AD5 /* ajmera_coding_challengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ajmera_coding_challengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,7 +59,7 @@
 		00D796A82D44D09300137AD5 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		00D796AE2D44D12600137AD5 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		00D796B02D44D14600137AD5 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
-		00D796B22D44D16B00137AD5 /* Dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
+		00D796B22D44D16B00137AD5 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		00D796B42D44D2BF00137AD5 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		00D796BE2D44E0A600137AD5 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		00D796C12D44F11100137AD5 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
@@ -110,6 +114,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		0043C4BE2D45494A0059F875 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0043C4BF2D4549610059F875 /* DashboardViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		00D796282D44CD1600137AD5 = {
 			isa = PBXGroup;
 			children = (
@@ -158,7 +170,7 @@
 		00D796A12D44D00A00137AD5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				00D796B22D44D16B00137AD5 /* Dashboard.swift */,
+				00D796B22D44D16B00137AD5 /* DashboardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -170,6 +182,7 @@
 				00D796B42D44D2BF00137AD5 /* AppConstants.swift */,
 				00D796C32D44F9B800137AD5 /* APIError.swift */,
 				00D796962D44CFCF00137AD5 /* Persistence.swift */,
+				0043C4802D452B3A0059F875 /* KeychainHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -197,6 +210,7 @@
 		00D796B92D44D87C00137AD5 /* DashboardView */ = {
 			isa = PBXGroup;
 			children = (
+				0043C4BE2D45494A0059F875 /* ViewModel */,
 				00D796A12D44D00A00137AD5 /* Views */,
 			);
 			path = DashboardView;
@@ -387,15 +401,17 @@
 			files = (
 				00D796AF2D44D12600137AD5 /* SignUpView.swift in Sources */,
 				00D796A92D44D09300137AD5 /* APIManager.swift in Sources */,
-				00D796B32D44D16B00137AD5 /* Dashboard.swift in Sources */,
+				00D796B32D44D16B00137AD5 /* DashboardView.swift in Sources */,
 				00D796C72D44FA2100137AD5 /* SignUpModel.swift in Sources */,
 				00D796B12D44D14600137AD5 /* SignInView.swift in Sources */,
 				00D7969C2D44CFCF00137AD5 /* Persistence.swift in Sources */,
+				0043C4C02D4549610059F875 /* DashboardViewModel.swift in Sources */,
 				00D796BF2D44E0A600137AD5 /* SignUpViewModel.swift in Sources */,
 				00D796C42D44F9B800137AD5 /* APIError.swift in Sources */,
 				00D796C22D44F11100137AD5 /* SignInViewModel.swift in Sources */,
 				00D796B52D44D2BF00137AD5 /* AppConstants.swift in Sources */,
 				00D7969D2D44CFCF00137AD5 /* ajmera_coding_challengeApp.swift in Sources */,
+				0043C4812D452B3A0059F875 /* KeychainHelper.swift in Sources */,
 				00D7969E2D44CFCF00137AD5 /* ajmera_coding_challenge.xcdatamodeld in Sources */,
 				0043C47D2D4513D00059F875 /* SignInModel.swift in Sources */,
 			);
